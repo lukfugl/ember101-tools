@@ -1,4 +1,5 @@
 users = require '../users'
 
 module.exports = Ember.Route.extend
-  model: -> users
+  model: (params) ->
+    users[params.user_id]
