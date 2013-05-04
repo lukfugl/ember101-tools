@@ -1,2 +1,5 @@
-<h1>{{name}}</h1>
-<h2>{{timer}}</h2>
+<ul class="nav well">
+  {{#each model}}
+  {{render "user" this}}
+  {{/each}}
+</ul>
